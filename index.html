@@ -5,7 +5,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
-        <script src="index.js"></script>
+        <!-- <script src="index.js"></script> -->
     </head>
     <body>
         <main id="container">
@@ -13,29 +13,30 @@
                 <p class="input-title">
                     Metric/Imperial Unit Conversion
                 </p>
-                <input type="text" id="input-input" value="0">
-                <button id="input-btnConvert">Convert</button>
+                <input type="text" id="input-input" value="5">
+                <button id="btnConvert">Convert</button>
             </header>
             <section class="result-section dev_border">
                 <div class="result-area dev_border">
                     <p class="result-title">Length (Meter/Feet)</p>
-                    <p class="result-results">
+                    <p class="result-results" id="length">
                         20 meters = 65.616 feet | 20 feet = 6.096 meters
                     </p>
                 </div>
                 <div class="result-area dev_border">
                     <p class="result-title">Volume (Liters/Gallons)</p>
-                    <p class="result-results">
+                    <p class="result-results" id="volume">
                         20 liters = 5.284 gallons | 20 gallons = 75.708 liters
                     </p>
                 </div>
                 <div class="result-area dev_border">
                     <p class="result-title">Mass (Kilograms/Pounds)</p>
-                    <p class="result-results">
+                    <p class="result-results" id="weight">
                         20 kilos = 44.092 pounds | 20 pounds = 9.072 kilos
                     </p>
                 </div>
             </section>
         </main>
+        <script src="index.js"></script>
     </body>
 </html>
