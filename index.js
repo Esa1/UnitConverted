@@ -6,10 +6,9 @@
 const inputBtnConvertEl = document.getElementById("btnConvert")
 const inputInputEl = document.querySelector("#input-input")
 const lengthEl = document.getElementById("length")
-//const lengthEl = document.querySelector("#length")
 const volumeEl = document.querySelector("#volume")
 const weightEl = document.querySelector("#weight")
-console.log(lengthEl)
+
 inputBtnConvertEl.addEventListener("click", () => {
     const val = inputInputEl.value
     const results = [
@@ -20,14 +19,7 @@ inputBtnConvertEl.addEventListener("click", () => {
         {kilograms : 0},
         {pounds : 0}
     ]
-/*    let results = {
-        meters : 0,
-        feets : 0,
-        liters : 0,
-        gallons : 0,
-        kilograms : 0,
-        pounds : 0
-    }*/
+
     results[0].meters = +(3.281 * val).toFixed(3)
     results[1].feets = +(val / 3.281).toFixed(3)
     results[2].liters = +(0.264 * val).toFixed(3) 
@@ -35,11 +27,6 @@ inputBtnConvertEl.addEventListener("click", () => {
     results[4].kilograms = +(2.204 * val).toFixed(3)
     results[5].pounds = +(val / 2.204).toFixed(3)
 
-//    console.log(Object.entries(results))
-    results.forEach(element => {
-        console.log(element)
-    });
-    //20 meters = 65.616 feet | 20 feet = 6.096 meters
     lengthEl.textContent = `${val} meters = ${results[1].feets} feets | ${val} feets = ${results[0].meters} meters`
     volumeEl.textContent = `${val} liters = ${results[3].gallons} gallons | ${val} gallons = ${results[2].liters} liters`
     weightEl.textContent = `${val} kilos = ${results[5].pounds} pounds | ${val} pounds = ${results[4].kilograms} kilos`

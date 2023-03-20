@@ -83,3 +83,21 @@ header{
     text-align: center;
     border-radius: 4.7px 0px 0px 0px;
 }
+
+.result-title{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #5A537B;
+}
+
+.result-results{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
